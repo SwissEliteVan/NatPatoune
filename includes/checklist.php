@@ -12,7 +12,7 @@
             </ul>
 
             <div class="text-center md:text-left">
-                <a href="#" class="inline-block bg-brand-purple text-white font-bold py-3 px-8 rounded-xl hover:bg-brand-purple-dark transition shadow-md" download>
+                <a href="[CHECKLIST_PDF_URL]" class="inline-block bg-brand-purple text-white font-bold py-3 px-8 rounded-xl hover:bg-brand-purple-dark transition shadow-md" download>
                     <i class="fas fa-download mr-2"></i> Télécharger la checklist
                 </a>
                 <p class="text-xs text-gray-400 mt-2 italic">* Document PDF (Lien à confirmer)</p>

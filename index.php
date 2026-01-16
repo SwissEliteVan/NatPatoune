@@ -23,14 +23,14 @@
 <?php include __DIR__ . '/includes/checklist.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>
 
-<?php include __DIR__ . '/includes/modals/modal-cadeau.php'; ?>
-<?php include __DIR__ . '/includes/modals/modal-cgv.php'; ?>
-<?php include __DIR__ . '/includes/modals/modal-privacy.php'; ?>
-<?php include __DIR__ . '/includes/modals/modal-certificat.php'; ?>
-<?php include __DIR__ . '/includes/modals/modal-mentions.php'; ?>
-<?php include __DIR__ . '/includes/modals/article-1.php'; ?>
-<?php include __DIR__ . '/includes/modals/article-2.php'; ?>
-<?php include __DIR__ . '/includes/modals/article-3.php'; ?>
+<?php include __DIR__ . '/modals/modal-cadeau.php'; ?>
+<?php include __DIR__ . '/modals/modal-cgv.php'; ?>
+<?php include __DIR__ . '/modals/modal-privacy.php'; ?>
+<?php include __DIR__ . '/modals/modal-certificat.php'; ?>
+<?php include __DIR__ . '/modals/modal-mentions.php'; ?>
+<?php include __DIR__ . '/modals/article-1.php'; ?>
+<?php include __DIR__ . '/modals/article-2.php'; ?>
+<?php include __DIR__ . '/modals/article-3.php'; ?>
 
 <?php include __DIR__ . '/includes/scripts.php'; ?>
 
