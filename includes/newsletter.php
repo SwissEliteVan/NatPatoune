@@ -7,7 +7,7 @@
                 <p class="text-gray-600">1 à 2 e-mails par mois, avec désinscription en un clic.</p>
             </div>
 
-            <form id="newsletterForm" class="space-y-4" action="#" method="post">
+            <form id="newsletterForm" class="space-y-4" action="[FORM_ACTION_URL]" method="post">
                 <div>
                     <label for="newsletterPrenom" class="block text-sm font-bold text-gray-700 mb-2">Prénom (optionnel)</label>
                     <input type="text" id="newsletterPrenom" name="prenom" autocomplete="given-name" class="w-full p-3 bg-white rounded-xl border border-gray-200 focus:border-brand-purple focus:ring-1 focus:ring-brand-purple outline-none">
