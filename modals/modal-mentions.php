@@ -21,7 +21,7 @@
         Représentée par : <strong>Madame Nathalie Piguet</strong><br>
         Siège (localité) : <strong>Saint-Saphorin-sur-Morges, Vaud, Suisse</strong><br>
         Téléphone : <a class="underline hover:text-brand-purple" href="tel:+41787685047">+41 78 768 50 47</a><br>
-        Email : <a class="underline hover:text-brand-purple email-protect" href="#">miaou@nat-patoune.ch</a>
+        Email : <a class="underline hover:text-brand-purple email-protect" href="mailto:miaou@nat-patoune.ch">miaou@nat-patoune.ch</a>
       </p>
 
       <p class="font-bold mb-2">2. Hébergement</p>

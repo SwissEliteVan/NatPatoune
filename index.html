@@ -514,14 +514,14 @@
     <div class="bg-brand-purple text-white py-2 text-xs font-medium relative z-20">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <span class="hidden md:inline"><i class="fas fa-map-marker-alt mr-2 text-brand-pink"></i> Morges, Ouest lausannois, Lausanne et Échallens</span>
-            <a href="#" class="hover:text-brand-pink transition top-email font-bold ml-auto md:ml-0 email-protect">Contact</a>
+            <a href="mailto:miaou@nat-patoune.ch" class="hover:text-brand-pink transition top-email font-bold ml-auto md:ml-0 email-protect">Contact</a>
         </div>
     </div>
 
     <!-- Navigation -->
     <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <a href="#" class="flex items-center">
+            <a href="#accueil" class="flex items-center">
                 <img src="assets/img/logo-natpatoune.jpg" alt="Nat'Patoune" class="h-12 md:h-16 w-auto" width="100" height="64" loading="eager">
             </a>
             
@@ -884,7 +884,7 @@
                     <h2 class="text-3xl font-title font-bold mb-6">Contactez-moi</h2>
                     <p class="mb-8 opacity-90">Vérifions ensemble mes disponibilités pour vos dates.</p>
                     <div class="space-y-4">
-                        <a href="#" class="flex items-center hover:text-brand-pink transition email-protect"><i class="fas fa-envelope w-8"></i> Contact</a>
+                        <a href="mailto:miaou@nat-patoune.ch" class="flex items-center hover:text-brand-pink transition email-protect"><i class="fas fa-envelope w-8"></i> Contact</a>
                         <a href="tel:+41787685047" class="flex items-center hover:text-brand-pink transition"><i class="fas fa-phone w-8"></i> +41 78 768 50 47</a>
                         <div class="flex items-center"><i class="fas fa-map-marker-alt w-8"></i> Saint-Saphorin-sur-Morges</div>
                     </div>
@@ -910,6 +910,63 @@
         </div>
     </section>
 
+    <!-- Newsletter -->
+    <section id="newsletter" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-brand-cream rounded-3xl p-8 md:p-12 shadow-soft">
+                <div class="mb-8">
+                    <h2 class="text-3xl font-title font-bold text-brand-text mb-4">Newsletter</h2>
+                    <p class="text-gray-600">Recevez des conseils pratiques pour le bien-être de votre chat et des rappels utiles avant vos départs.</p>
+                    <p class="text-gray-600">1 à 2 e-mails par mois, avec désinscription en un clic.</p>
+                </div>
+                <form id="newsletterForm" class="space-y-4" action="[FORM_ACTION_URL]" method="post">
+                    <div>
+                        <label for="newsletterPrenom" class="block text-sm font-bold text-gray-700 mb-2">Prénom (optionnel)</label>
+                        <input type="text" id="newsletterPrenom" name="prenom" autocomplete="given-name" class="w-full p-3 bg-white rounded-xl border border-gray-200 focus:border-brand-purple focus:ring-1 focus:ring-brand-purple outline-none">
+                    </div>
+                    <div>
+                        <label for="newsletterEmail" class="block text-sm font-bold text-gray-700 mb-2">Email</label>
+                        <input type="email" id="newsletterEmail" name="email" autocomplete="email" required class="w-full p-3 bg-white rounded-xl border border-gray-200 focus:border-brand-purple focus:ring-1 focus:ring-brand-purple outline-none">
+                    </div>
+                    <div class="hidden" aria-hidden="true">
+                        <label for="newsletterCompany" class="block text-sm font-bold text-gray-700 mb-2">Ne pas remplir</label>
+                        <input type="text" id="newsletterCompany" name="company" tabindex="-1" autocomplete="off" class="w-full p-3 bg-white rounded-xl border border-gray-200">
+                    </div>
+                    <label class="flex items-start gap-3 text-sm text-gray-600">
+                        <input type="checkbox" id="newsletterConsent" name="consent" required class="mt-1">
+                        <span>J'accepte de recevoir des e-mails de Nat'Patoune et je peux me désinscrire à tout moment.</span>
+                    </label>
+                    <button type="submit" class="w-full bg-brand-purple text-white font-bold py-3 rounded-xl hover:bg-brand-purple-dark transition">Je m'inscris</button>
+                    <p class="text-xs text-gray-500">Double opt-in recommandé si votre plateforme le permet. <a href="[LIEN_POLITIQUE_CONFIDENTIALITE]" class="underline hover:text-brand-purple">Politique de confidentialité</a></p>
+                </form>
+                <div id="newsletterSuccess" class="hidden text-center py-6" aria-live="polite">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check text-2xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-title font-bold text-brand-text mb-2">Merci pour votre inscription !</h3>
+                    <p class="text-gray-600 text-sm">Vous recevrez un e-mail de confirmation. Pensez à vérifier vos spams si besoin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checklist à obtenir -->
+    <section id="checklist" class="py-20 bg-brand-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-title font-bold text-brand-text mb-6">Checklist à obtenir</h2>
+                <ul class="list-disc pl-5 space-y-3 text-gray-600">
+                    <li><strong>Accès &amp; comptes :</strong> hébergement, DNS, CMS, FTP/SFTP, admin WordPress, Google (Analytics/Search Console), Meta Business, Google Business Profile</li>
+                    <li><strong>Contenus &amp; assets :</strong> logos, photos, icônes, documents (CGV, contrat, etc.), mentions légales, politique de confidentialité</li>
+                    <li><strong>Paramètres de conversion :</strong> email de réception formulaire, téléphone, WhatsApp, zones desservies</li>
+                    <li><strong>Outils marketing :</strong> plateforme newsletter choisie, accès SMTP, domaine d’envoi, adresse d’expéditeur</li>
+                    <li><strong>Tracking :</strong> consentement cookies si présent, événements (submit form, click tel, click whatsapp)</li>
+                    <li><strong>Validation :</strong> qui valide, délai, process de mise en prod</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-brand-purple-dark text-white pt-16 pb-8 border-t border-white/10">
         <div class="container mx-auto px-4">
@@ -927,7 +984,7 @@
                         <a href="tel:+41787685047" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition" aria-label="Téléphone">
                             <i class="fas fa-phone text-xl"></i>
                         </a>
-                        <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition email-protect" aria-label="Email">
+                        <a href="mailto:miaou@nat-patoune.ch" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition email-protect" aria-label="Email">
                             <i class="fas fa-envelope text-xl"></i>
                         </a>
                     </div>
@@ -1052,7 +1109,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" onclick="window.location.reload()" class="text-brand-purple font-bold text-sm underline">Fermer et retourner au site</a>
+                    <a href="#accueil" onclick="window.location.reload()" class="text-brand-purple font-bold text-sm underline">Fermer et retourner au site</a>
                 </div>
             </div>
         </div>
@@ -1480,7 +1537,7 @@
         Représentée par : <strong>Madame Nathalie Piguet</strong><br>
         Siège (localité) : <strong>Saint-Saphorin-sur-Morges, Vaud, Suisse</strong><br>
         Téléphone : <a class="underline hover:text-brand-purple" href="tel:+41787685047">+41 78 768 50 47</a><br>
-        Email : <a class="underline hover:text-brand-purple email-protect" href="#">miaou@nat-patoune.ch</a>
+        Email : <a class="underline hover:text-brand-purple email-protect" href="mailto:miaou@nat-patoune.ch">miaou@nat-patoune.ch</a>
       </p>
 
       <p class="font-bold mb-2">2. Hébergement</p>
@@ -1780,6 +1837,29 @@ Message :
 Merci !`);
                 
                 window.location.href = `mailto:${user}@${domain}?subject=${subject}&body=${body}`;
+            });
+        }
+
+        // Formulaire newsletter
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                if (!this.checkValidity()) {
+                    this.reportValidity();
+                    return;
+                }
+
+                e.preventDefault();
+                const honeypot = document.getElementById('newsletterCompany');
+                if (honeypot && honeypot.value) {
+                    return;
+                }
+
+                newsletterForm.classList.add('hidden');
+                const newsletterSuccess = document.getElementById('newsletterSuccess');
+                if (newsletterSuccess) {
+                    newsletterSuccess.classList.remove('hidden');
+                }
             });
         }
 

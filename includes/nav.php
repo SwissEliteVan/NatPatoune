@@ -1,7 +1,7 @@
 <!-- Navigation -->
     <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <a href="#" class="flex items-center">
+            <a href="#accueil" class="flex items-center">
                 <img src="assets/img/logo-natpatoune.jpg" alt="Nat'Patoune" class="h-12 md:h-16 w-auto" width="100" height="64" loading="eager">
             </a>
             

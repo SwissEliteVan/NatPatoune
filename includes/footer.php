@@ -15,7 +15,7 @@
                         <a href="tel:+41787685047" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition" aria-label="Téléphone">
                             <i class="fas fa-phone text-xl"></i>
                         </a>
-                        <a href="#" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition email-protect" aria-label="Email">
+                        <a href="mailto:miaou@nat-patoune.ch" class="bg-white/10 hover:bg-white/20 p-3 rounded-full transition email-protect" aria-label="Email">
                             <i class="fas fa-envelope text-xl"></i>
                         </a>
                     </div>
