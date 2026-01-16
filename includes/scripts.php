@@ -129,6 +129,29 @@ Merci !`);
             });
         }
 
+        // Formulaire newsletter
+        const newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', function(e) {
+                if (!this.checkValidity()) {
+                    this.reportValidity();
+                    return;
+                }
+
+                e.preventDefault();
+                const honeypot = document.getElementById('newsletterCompany');
+                if (honeypot && honeypot.value) {
+                    return;
+                }
+
+                newsletterForm.classList.add('hidden');
+                const newsletterSuccess = document.getElementById('newsletterSuccess');
+                if (newsletterSuccess) {
+                    newsletterSuccess.classList.remove('hidden');
+                }
+            });
+        }
+
         // Formulaire cadeau
         const giftForm = document.getElementById('giftForm');
         if(giftForm) {
