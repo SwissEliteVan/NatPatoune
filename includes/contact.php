@@ -6,7 +6,7 @@
                     <h2 class="text-3xl font-title font-bold mb-6">Contactez-moi</h2>
                     <p class="mb-8 opacity-90">Vérifions ensemble mes disponibilités pour vos dates.</p>
                     <div class="space-y-4">
-                        <a href="#" class="flex items-center hover:text-brand-pink transition email-protect"><i class="fas fa-envelope w-8"></i> Contact</a>
+                        <a href="mailto:miaou@nat-patoune.ch" class="flex items-center hover:text-brand-pink transition email-protect"><i class="fas fa-envelope w-8"></i> Contact</a>
                         <a href="tel:+41787685047" class="flex items-center hover:text-brand-pink transition"><i class="fas fa-phone w-8"></i> +41 78 768 50 47</a>
                         <div class="flex items-center"><i class="fas fa-map-marker-alt w-8"></i> Saint-Saphorin-sur-Morges</div>
                     </div>
