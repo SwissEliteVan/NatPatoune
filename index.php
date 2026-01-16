@@ -19,8 +19,6 @@
 <?php include __DIR__ . '/includes/avis.php'; ?>
 <?php include __DIR__ . '/includes/propos.php'; ?>
 <?php include __DIR__ . '/includes/contact.php'; ?>
-<?php include __DIR__ . '/includes/newsletter.php'; ?>
-<?php include __DIR__ . '/includes/checklist.php'; ?>
 <?php include __DIR__ . '/includes/footer.php'; ?>
 
 <?php include __DIR__ . '/includes/modals/modal-cadeau.php'; ?>

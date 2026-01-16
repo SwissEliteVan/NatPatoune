@@ -74,7 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#accueil" onclick="window.location.reload()" class="text-brand-purple font-bold text-sm underline">Fermer et retourner au site</a>
+                    <a href="#" onclick="window.location.reload()" class="text-brand-purple font-bold text-sm underline">Fermer et retourner au site</a>
                 </div>
             </div>
         </div>
