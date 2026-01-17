@@ -6,13 +6,12 @@
                 <li><strong>Accès &amp; comptes :</strong> hébergement, DNS, CMS, FTP/SFTP, admin WordPress, Google (Analytics/Search Console), Meta Business, Google Business Profile</li>
                 <li><strong>Contenus &amp; assets :</strong> logos, photos, icônes, documents (CGV, contrat, etc.), mentions légales, politique de confidentialité</li>
                 <li><strong>Paramètres de conversion :</strong> email de réception formulaire, téléphone, WhatsApp, zones desservies</li>
-                <li><strong>Outils marketing :</strong> plateforme newsletter choisie, accès SMTP, domaine d'envoi, adresse d'expéditeur</li>
+                <li><strong>Outils marketing :</strong> plateforme newsletter choisie, accès SMTP, domaine d’envoi, adresse d’expéditeur</li>
                 <li><strong>Tracking :</strong> consentement cookies si présent, événements (submit form, click tel, click whatsapp)</li>
                 <li><strong>Validation :</strong> qui valide, délai, process de mise en prod</li>
             </ul>
-
             <div class="text-center md:text-left">
-                <a href="[CHECKLIST_PDF_URL]" class="inline-block bg-brand-purple text-white font-bold py-3 px-8 rounded-xl hover:bg-brand-purple-dark transition shadow-md" download>
+                <a href="#" class="inline-block bg-brand-purple text-white font-bold py-3 px-8 rounded-xl hover:bg-brand-purple-dark transition shadow-md" download>
                     <i class="fas fa-download mr-2"></i> Télécharger la checklist
                 </a>
                 <p class="text-xs text-gray-400 mt-2 italic">* Document PDF (Lien à confirmer)</p>
