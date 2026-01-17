@@ -1,231 +1,115 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nat'Patoune - Garde de chats Vaud</title>
-    <link rel="stylesheet" href="themes/sky/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+/* --- DESIGN SKY ORIGINAL RECONSTITUÉ --- */
+@font-face { font-family: 'Catamaran'; font-style: normal; font-weight: 400; src: url('fonts/catamaran-v7-latin-ext_latin-regular.woff2') format('woff2'); }
+@font-face { font-family: 'Catamaran'; font-style: normal; font-weight: 700; src: url('fonts/catamaran-v7-latin-ext_latin-700.woff2') format('woff2'); }
 
-    <div style="background:rgba(0,0,0,0.3); padding:10px; text-align:center; font-size:0.85em;">
-        <i class="fas fa-map-marker-alt"></i> Morges, Ouest lausannois, Lausanne et Échallens &nbsp;|&nbsp; 
-        <a href="mailto:miaou@nat-patoune.ch" style="font-weight:bold;">miaou@nat-patoune.ch</a>
-    </div>
+html, body {
+    margin: 0; padding: 0; border: 0;
+    font-family: 'Catamaran', sans-serif;
+    color: #fff;
+    /* Ton dégradé bleu/violet d'origine */
+    background-image: linear-gradient(45deg, rgb(102, 95, 238) 0%, rgb(39, 194, 222) 100%);
+    background-attachment: fixed;
+    min-height: 100%;
+}
 
-    <section id="topMenu">
-        <div class="inner">
-            <nav>
-                <a href="#accueil">Accueil</a>
-                <a href="#services">Formules</a>
-                <a href="#checklist">Checklist</a>
-                <a href="#blog">Conseils</a>
-                <a href="#contact" class="btn-reserve">Réserver</a>
-            </nav>
-        </div>
-    </section>
+a { color: inherit; text-decoration: none; transition: all 0.3s; border-bottom: 1px dotted rgba(255,255,255,0.5); }
+a:hover { color: #fff; border-bottom: 1px solid #fff; }
+h1, h2, h3 { font-weight: bold; margin-bottom: 0.5em; color: #fff; }
+h1 { font-size: 3em; line-height: 1.2; }
+h2 { font-size: 2.2em; text-align: center; text-transform: uppercase; letter-spacing: 2px; margin-top: 0; }
+p { margin-bottom: 1.5em; line-height: 1.6; font-size: 1.1em; opacity: 0.9; }
 
-    <section id="accueil" class="wrapper">
-        <div class="inner" id="hero">
-            <span class="hero-tag">Service Premium Vaud</span>
-            <h1>Garde de chats à votre domicile</h1>
-            <p>Partez l'esprit tranquille. Soins, jeux et affection pour votre chat en votre absence.<br>
-            Une alternative douce à la pension pour son bien-être.</p>
-            <br>
-            <a href="#services" class="button">Voir les tarifs</a>
-            <a href="#contact" class="button outline">Me contacter</a>
-        </div>
-    </section>
+/* STRUCTURE DU SITE (Wrapper) */
+.wrapper { width: 100%; padding: 60px 0; position: relative; }
+.wrapper.dark { background: rgba(0,0,0,0.15); } /* Fond un peu plus sombre pour alterner */
+.inner { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.text-center { text-align: center; }
 
-    <section id="services" class="wrapper dark">
-        <div class="inner">
-            <h2>Mes Formules</h2>
-            <div class="grid-3">
-                <div class="card text-center">
-                    <span class="card-icon">🐱</span>
-                    <h3>Visite Essentielle</h3>
-                    <p>30 minutes. Idéal pour les chats indépendants.</p>
-                    <ul class="checklist-list" style="margin:20px 0;">
-                        <li>Eau & Nourriture</li>
-                        <li>Litière propre</li>
-                        <li>Nouvelles par message</li>
-                    </ul>
-                    <span class="price">dès 25 CHF</span>
-                </div>
-                <div class="card text-center" style="background:rgba(255,255,255,0.25); border:2px solid #fff;">
-                    <span class="card-icon">❤️</span>
-                    <h3>Visite Câlins</h3>
-                    <p>45 minutes. Le favori des chats joueurs !</p>
-                    <ul class="checklist-list" style="margin:20px 0;">
-                        <li>Tout l'essentiel</li>
-                        <li>Jeux & Caresses</li>
-                        <li>Brossage si apprécié</li>
-                    </ul>
-                    <span class="price">dès 35 CHF</span>
-                </div>
-                <div class="card text-center">
-                    <span class="card-icon">💊</span>
-                    <h3>Soins Spécifiques</h3>
-                    <p>Pour chats âgés ou médicalisés.</p>
-                    <ul class="checklist-list" style="margin:20px 0;">
-                        <li>Prise de médicaments</li>
-                        <li>Surveillance accrue</li>
-                        <li>Patience & Douceur</li>
-                    </ul>
-                    <span class="price">Sur Devis</span>
-                </div>
-            </div>
-        </div>
-    </section>
+/* MENU */
+#topMenu {
+    background: rgba(0,0,0,0.2);
+    padding: 20px 0;
+    position: sticky; top: 0; z-index: 100;
+    text-align: center;
+}
+#topMenu a {
+    margin: 0 15px; font-size: 0.9em; text-transform: uppercase;
+    font-weight: bold; letter-spacing: 1px; border: none;
+}
+.btn-reserve {
+    background: #fff; color: #665fee !important;
+    padding: 8px 20px !important; border-radius: 50px;
+}
 
-    <section id="checklist" class="wrapper">
-        <div class="inner">
-            <h2>Prêts pour le départ ?</h2>
-            <p class="text-center">Pour un cat-sitting serein, voici les essentiels à préparer.</p>
-            
-            <div class="grid-3">
-                <div class="card">
-                    <h3>🏠 Logement</h3>
-                    <ul class="checklist-list">
-                        <li>Clés testées ou code</li>
-                        <li>Contact voisin/ami</li>
-                        <li>Consignes plantes/courrier</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>🐈 Chat</h3>
-                    <ul class="checklist-list">
-                        <li>Carnet de santé visible</li>
-                        <li>Stock (litière/repas)</li>
-                        <li>Caisse de transport</li>
-                        <li>Jouets sortis</li>
-                    </ul>
-                </div>
-                <div class="card text-center" style="display:flex; flex-direction:column; justify-content:center;">
-                    <h3>Version Complète</h3>
-                    <p>Téléchargez la liste détaillée pour ne rien oublier.</p>
-                    <a href="checklist.html" target="_blank" class="button">Ouvrir la Checklist</a>
-                </div>
-            </div>
-        </div>
-    </section>
+/* BOUTONS */
+.button {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #fff;
+    color: #665fee;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: none !important; cursor: pointer;
+    margin: 10px;
+}
+.button:hover { transform: translateY(-3px); background: #f0f0f0; border: none !important; }
 
-    <section id="blog" class="wrapper dark">
-        <div class="inner">
-            <h2>Le Guide du Chat Heureux</h2>
-            <div class="grid-3">
-                <article class="card">
-                    <h3>Garde à domicile vs Pension</h3>
-                    <p>Pourquoi le chat préfère rester chez lui ? Moins de stress, pas de transport, et ses repères conservés.</p>
-                    <button onclick="openModal('art1')" style="color:#fff; text-decoration:underline; background:none; border:none; cursor:pointer; font-weight:bold;">Lire l'article</button>
-                </article>
-                <article class="card">
-                    <h3>Vacances dans le Vaud</h3>
-                    <p>Partez tranquille. Je m'occupe de tout : nourriture, litière, jeux et câlins à votre domicile.</p>
-                    <button onclick="openModal('art2')" style="color:#fff; text-decoration:underline; background:none; border:none; cursor:pointer; font-weight:bold;">Lire l'article</button>
-                </article>
-                <article class="card">
-                    <h3>Chats âgés ou anxieux</h3>
-                    <p>Une attention particulière pour les profils sensibles. Douceur et surveillance médicale si besoin.</p>
-                    <button onclick="openModal('art3')" style="color:#fff; text-decoration:underline; background:none; border:none; cursor:pointer; font-weight:bold;">Lire l'article</button>
-                </article>
-            </div>
-        </div>
-    </section>
+/* NOUVEAUX ELEMENTS (Blog, Services, etc.) */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; margin-top: 30px;
+}
+.card {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 15px; padding: 25px;
+    text-align: left; transition: 0.3s;
+}
+.card:hover { background: rgba(255,255,255,0.2); transform: translateY(-5px); }
+.card h3 { font-size: 1.3em; margin-bottom: 10px; color: #fff; }
+.card-icon { font-size: 2.5em; display: block; margin-bottom: 15px; text-align: center; }
 
-    <section id="newsletter" class="wrapper">
-        <div class="inner text-center">
-            <div style="background:rgba(255,255,255,0.15); padding:40px; border-radius:20px; max-width:700px; margin:0 auto;">
-                <h2>Restons en contact</h2>
-                <p>Rejoignez la communauté Nat'Patoune ! Conseils bien-être et disponibilités.</p>
-                <form action="#" style="max-width:500px; margin:0 auto;">
-                    <input type="email" placeholder="Votre email" required>
-                    <label style="display:block; text-align:left; font-size:0.8em; margin-bottom:15px;">
-                        <input type="checkbox" style="width:auto; margin-right:10px;" required> J'accepte de recevoir l'infolettre.
-                    </label>
-                    <button type="submit" class="button">S'inscrire</button>
-                </form>
-            </div>
-        </div>
-    </section>
+/* LISTE A PUCE (Checklist) */
+.checklist-list { list-style: none; padding: 0; }
+.checklist-list li {
+    padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-left: 25px; position: relative;
+}
+.checklist-list li:before {
+    content: '✓'; position: absolute; left: 0;
+    font-weight: bold; color: #fff;
+}
 
-    <section id="contact" class="wrapper dark">
-        <div class="inner">
-            <h2>Une réservation ? Une question ?</h2>
-            <div style="max-width:600px; margin:0 auto;">
-                <form action="#" method="POST">
-                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
-                        <input type="text" placeholder="Votre Nom" required>
-                        <input type="email" placeholder="Votre Email" required>
-                    </div>
-                    <select>
-                        <option>Demande de devis</option>
-                        <option>Renseignement</option>
-                        <option>Autre</option>
-                    </select>
-                    <textarea rows="5" placeholder="Comment puis-je vous aider ?" required></textarea>
-                    <div class="text-center">
-                        <button type="submit" class="button">Envoyer ma demande</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+/* FORMULAIRES */
+input, select, textarea {
+    width: 100%; padding: 15px; margin-bottom: 15px;
+    background: rgba(255,255,255,0.9); border: none;
+    border-radius: 8px; font-family: inherit; color: #333;
+    box-sizing: border-box;
+}
 
-    <footer>
-        <div class="inner">
-            <p>&copy; 2026 Nat'Patoune - Tous droits réservés.</p>
-            <p style="font-size:0.8em; opacity:0.6;">Site réalisé avec ❤️ pour les chats.</p>
-        </div>
-    </footer>
+/* MODALES POPUP */
+.modal {
+    display: none; position: fixed; z-index: 999;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center; justify-content: center;
+}
+.modal-content {
+    background-color: #fff; color: #333;
+    padding: 30px; border-radius: 15px;
+    width: 90%; max-width: 600px;
+    position: relative; max-height: 80vh; overflow-y: auto;
+}
+.modal-content h2 { color: #665fee; }
+.close {
+    position: absolute; top: 15px; right: 20px;
+    font-size: 28px; cursor: pointer; color: #888;
+}
 
-    <div id="art1" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('art1')">&times;</span>
-            <h2>Garde à domicile vs Pension</h2>
-            <p>Le chat est un animal territorial. Le déplacer en pension génère un stress important (bruits, odeurs d'autres animaux, cage).</p>
-            <p><strong>La solution domicile :</strong></p>
-            <ul>
-                <li>Il garde ses repères et son canapé.</li>
-                <li>Pas de stress du transport.</li>
-                <li>Je passe chaque jour pour s'occuper de lui.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="art2" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('art2')">&times;</span>
-            <h2>Vacances sereines</h2>
-            <p>Profitez de vos vacances, je prends le relais !</p>
-            <p>À chaque visite :</p>
-            <ul>
-                <li>Renouvellement eau et nourriture.</li>
-                <li>Nettoyage complet de la litière.</li>
-                <li>Temps de jeu et câlins.</li>
-                <li>Photos envoyées sur WhatsApp pour vous rassurer.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div id="art3" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('art3')">&times;</span>
-            <h2>Chats sensibles</h2>
-            <p>J'ai une affinité particulière avec les chats timides, âgés ou ayant besoin de soins.</p>
-            <p>Je suis formée pour administrer les médicaments (comprimés, insuline) et je respecte le rythme de l'animal sans jamais forcer le contact.</p>
-        </div>
-    </div>
-
-    <script>
-        function openModal(id) { document.getElementById(id).style.display = "flex"; }
-        function closeModal(id) { document.getElementById(id).style.display = "none"; }
-        window.onclick = function(event) {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = "none";
-            }
-        }
-    </script>
-</body>
-</html>
+/* PIED DE PAGE */
+footer { padding: 40px 0; background: rgba(0,0,0,0.3); text-align: center; font-size: 0.8em; }
