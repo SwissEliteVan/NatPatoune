@@ -1,4 +1,4 @@
-/* --- DESIGN SKY ORIGINAL RECONSTITUÉ --- */
+/* --- DESIGN ORIGINAL SKY --- */
 @font-face { font-family: 'Catamaran'; font-style: normal; font-weight: 400; src: url('fonts/catamaran-v7-latin-ext_latin-regular.woff2') format('woff2'); }
 @font-face { font-family: 'Catamaran'; font-style: normal; font-weight: 700; src: url('fonts/catamaran-v7-latin-ext_latin-700.woff2') format('woff2'); }
 
@@ -6,139 +6,101 @@ html, body {
     margin: 0; padding: 0; border: 0;
     font-family: 'Catamaran', sans-serif;
     color: #fff;
-    /* Le fameux dégradé Sky */
     background-image: linear-gradient(45deg, rgb(102, 95, 238) 0%, rgb(39, 194, 222) 100%);
     background-attachment: fixed;
     min-height: 100%;
 }
 
-a { color: inherit; text-decoration: none; transition: all 0.3s; }
-a:hover { color: #fff; text-shadow: 0 0 5px rgba(255,255,255,0.5); }
+/* Liens et Titres */
+a { color: inherit; text-decoration: none; transition: all 0.3s; border-bottom: 1px dotted rgba(255,255,255,0.5); }
+a:hover { color: #fff; border-bottom: 1px solid #fff; }
 h1, h2, h3 { font-weight: bold; margin-bottom: 0.5em; color: #fff; }
-h1 { font-size: 2.8em; line-height: 1.2; }
-h2 { font-size: 2.2em; margin-bottom: 1em; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
-p { margin-bottom: 1.5em; line-height: 1.6; font-size: 1.1em; opacity: 0.9; }
+h1 { font-size: 3em; line-height: 1.2; }
+h2 { font-size: 2.2em; text-align: center; text-transform: uppercase; letter-spacing: 2px; margin-top: 0; }
+h3 { font-size: 1.4em; }
+p { margin-bottom: 1.5em; line-height: 1.6; font-size: 1.1em; opacity: 0.95; }
 
-/* STRUCTURE */
+/* Structure */
 .wrapper { width: 100%; padding: 60px 0; position: relative; }
-.wrapper.dark { background: rgba(0,0,0,0.15); } /* Fond plus sombre pour alterner */
+.wrapper.dark { background: rgba(0,0,0,0.15); }
 .inner { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
 .text-center { text-align: center; }
 
-/* HEADER & MENU */
+/* Menu du haut */
 #topMenu {
-    background: rgba(0,0,0,0.25);
-    padding: 20px 0;
-    position: sticky; top: 0; z-index: 100;
-    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.2);
+    padding: 20px 0; position: sticky; top: 0; z-index: 100; text-align: center;
 }
-#topMenu nav { text-align: center; }
 #topMenu a {
-    margin: 0 15px;
-    font-size: 0.95em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
+    margin: 0 15px; font-size: 0.9em; text-transform: uppercase;
+    font-weight: bold; letter-spacing: 1px; border: none;
 }
-#topMenu a:hover { border-bottom-color: #fff; }
 .btn-reserve {
     background: #fff; color: #665fee !important;
-    padding: 10px 20px !important; border-radius: 50px;
+    padding: 8px 20px !important; border-radius: 50px;
 }
 
-/* HERO SECTION */
-#hero { padding: 100px 0; text-align: center; }
-.hero-tag {
-    display: inline-block; padding: 5px 15px;
-    background: rgba(255,255,255,0.2); border-radius: 50px;
-    font-size: 0.8em; text-transform: uppercase; letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-/* BOUTONS */
+/* Boutons */
 .button {
-    display: inline-block;
-    padding: 15px 35px;
-    background: #fff;
-    color: #665fee;
-    border-radius: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    display: inline-block; padding: 15px 35px;
+    background: #fff; color: #665fee;
+    border-radius: 50px; font-weight: bold;
+    text-transform: uppercase; letter-spacing: 1px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    border: none; cursor: pointer;
-    margin: 10px;
+    border: none !important; cursor: pointer; margin: 10px;
 }
-.button:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); background: #f9f9f9; }
-.button.outline { background: transparent; border: 2px solid #fff; color: #fff; }
-.button.outline:hover { background: #fff; color: #665fee; }
+.button:hover { transform: translateY(-3px); background: #f0f0f0; }
+.button.outline { background: transparent; border: 2px solid #fff !important; color: #fff; }
 
-/* GRILLES (Services, Blog) */
+/* NOUVEAUX ELEMENTS (Grilles et Cartes) */
 .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; margin-top: 30px;
 }
-
-/* CARTES */
+.grid-2 {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px; margin-top: 30px;
+}
 .card {
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 20px;
-    padding: 30px;
+    border-radius: 15px; padding: 25px;
     transition: 0.3s;
 }
 .card:hover { background: rgba(255,255,255,0.2); transform: translateY(-5px); }
-.card h3 { font-size: 1.4em; margin-bottom: 15px; color: #fff; }
-.card-icon { font-size: 2.5em; margin-bottom: 20px; display: block; }
-.price { font-size: 1.5em; font-weight: bold; color: #fff; margin-top: 15px; display: block; }
+.card-icon { font-size: 2em; display: block; margin-bottom: 15px; }
 
-/* CHECKLIST & LISTES */
+/* Checklist */
 .checklist-list { list-style: none; padding: 0; }
 .checklist-list li {
     padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1);
-    display: flex; align-items: center;
+    position: relative; padding-left: 30px;
 }
-.checklist-list li:before {
-    content: '✓'; margin-right: 10px;
-    background: #fff; color: #665fee;
-    width: 20px; height: 20px; border-radius: 50%;
-    display: inline-flex; align-items: center; justify-content: center;
-    font-size: 12px; font-weight: bold;
-}
+.checklist-list li i { position: absolute; left: 0; top: 12px; color: #fff; }
 
-/* FORMULAIRES (Contact & Newsletter) */
+/* Formulaires */
 input, select, textarea {
     width: 100%; padding: 15px; margin-bottom: 15px;
     background: rgba(255,255,255,0.9); border: none;
-    border-radius: 10px; font-family: inherit; color: #333;
+    border-radius: 8px; font-family: inherit; color: #333;
     box-sizing: border-box;
 }
-input:focus, textarea:focus { outline: none; box-shadow: 0 0 0 3px rgba(255,255,255,0.5); }
+::placeholder { color: #666; }
 
-/* MODALES */
+/* Modales */
 .modal {
-    display: none; position: fixed; z-index: 1000;
+    display: none; position: fixed; z-index: 999;
     left: 0; top: 0; width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.8);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.85);
     align-items: center; justify-content: center;
 }
 .modal-content {
     background-color: #fff; color: #333;
-    padding: 40px; border-radius: 20px;
+    padding: 40px; border-radius: 15px;
     width: 90%; max-width: 600px;
     position: relative; max-height: 80vh; overflow-y: auto;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 .modal-content h2 { color: #665fee; text-align: left; margin-top: 0; }
-.close {
-    position: absolute; top: 15px; right: 25px;
-    color: #aaa; font-size: 28px; font-weight: bold; cursor: pointer;
-}
-.close:hover { color: #000; }
+.close { position: absolute; top: 15px; right: 20px; font-size: 28px; cursor: pointer; color: #888; }
 
-/* FOOTER */
-footer { padding: 40px 0; background: rgba(0,0,0,0.3); font-size: 0.9em; text-align: center; }
+footer { padding: 40px 0; background: rgba(0,0,0,0.3); text-align: center; font-size: 0.8em; }
