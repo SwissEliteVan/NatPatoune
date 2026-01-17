@@ -2,172 +2,227 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Nat'Patoune - Cat Sitting Vaud</title>
-    <meta name="description" content="Garde de chats à domicile professionnelle et bienveillante.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat'Patoune - Garde de chats Vaud</title>
     <link rel="stylesheet" href="themes/sky/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <div id="topMenu">
-        <nav>
-            <a href="#accueil">Accueil</a>
-            <a href="#services">Services</a>
-            <a href="#checklist">Checklist</a>
-            <a href="#blog">Conseils</a>
-            <a href="#contact" style="border: 1px solid #fff; padding: 8px 15px; border-radius: 20px;">Réserver</a>
-        </nav>
+    <div style="background:rgba(0,0,0,0.3); padding:10px; text-align:center; font-size:0.85em;">
+        <i class="fas fa-map-marker-alt"></i> Morges, Ouest lausannois, Lausanne et Échallens &nbsp;|&nbsp; 
+        <a href="mailto:miaou@nat-patoune.ch" style="font-weight:bold;">miaou@nat-patoune.ch</a>
     </div>
 
-    <div id="accueil" class="wrapper">
-        <div class="inner text-center">
-            <h1>Partez l'esprit libre</h1>
-            <p style="font-size: 1.2em;">Je veille sur votre chat à votre domicile avec soin et professionnalisme.</p>
-            <br>
-            <a href="#contact" class="button">Rencontrons-nous</a>
-        </div>
-    </div>
-
-    <div id="services" class="wrapper" style="background: rgba(0,0,0,0.1);">
+    <section id="topMenu">
         <div class="inner">
-            <h2 class="text-center">Mes Formules</h2>
+            <nav>
+                <a href="#accueil">Accueil</a>
+                <a href="#services">Formules</a>
+                <a href="#checklist">Checklist</a>
+                <a href="#blog">Conseils</a>
+                <a href="#contact" class="btn-reserve">Réserver</a>
+            </nav>
+        </div>
+    </section>
+
+    <section id="accueil" class="wrapper">
+        <div class="inner" id="hero">
+            <span class="hero-tag">Service Premium Vaud</span>
+            <h1>Garde de chats à votre domicile</h1>
+            <p>Partez l'esprit tranquille. Soins, jeux et affection pour votre chat en votre absence.<br>
+            Une alternative douce à la pension pour son bien-être.</p>
+            <br>
+            <a href="#services" class="button">Voir les tarifs</a>
+            <a href="#contact" class="button outline">Me contacter</a>
+        </div>
+    </section>
+
+    <section id="services" class="wrapper dark">
+        <div class="inner">
+            <h2>Mes Formules</h2>
             <div class="grid-3">
-                <div class="card">
+                <div class="card text-center">
+                    <span class="card-icon">🐱</span>
                     <h3>Visite Essentielle</h3>
-                    <p>30 minutes. Idéal pour les chats indépendants. Eau, nourriture, litière propre.</p>
+                    <p>30 minutes. Idéal pour les chats indépendants.</p>
+                    <ul class="checklist-list" style="margin:20px 0;">
+                        <li>Eau & Nourriture</li>
+                        <li>Litière propre</li>
+                        <li>Nouvelles par message</li>
+                    </ul>
+                    <span class="price">dès 25 CHF</span>
                 </div>
-                <div class="card" style="background: rgba(255,255,255,0.25); border-color: #fff;">
-                    <h3>Visite Câlins (Favori)</h3>
-                    <p>45 minutes. Le temps pour jouer, brosser et câliner votre compagnon.</p>
+                <div class="card text-center" style="background:rgba(255,255,255,0.25); border:2px solid #fff;">
+                    <span class="card-icon">❤️</span>
+                    <h3>Visite Câlins</h3>
+                    <p>45 minutes. Le favori des chats joueurs !</p>
+                    <ul class="checklist-list" style="margin:20px 0;">
+                        <li>Tout l'essentiel</li>
+                        <li>Jeux & Caresses</li>
+                        <li>Brossage si apprécié</li>
+                    </ul>
+                    <span class="price">dès 35 CHF</span>
                 </div>
-                <div class="card">
+                <div class="card text-center">
+                    <span class="card-icon">💊</span>
                     <h3>Soins Spécifiques</h3>
-                    <p>Pour les chats âgés ou nécessitant un traitement médical (sur devis).</p>
+                    <p>Pour chats âgés ou médicalisés.</p>
+                    <ul class="checklist-list" style="margin:20px 0;">
+                        <li>Prise de médicaments</li>
+                        <li>Surveillance accrue</li>
+                        <li>Patience & Douceur</li>
+                    </ul>
+                    <span class="price">Sur Devis</span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="checklist" class="wrapper">
+    <section id="checklist" class="wrapper">
         <div class="inner">
-            <h2 class="text-center">Prêts pour le départ ?</h2>
-            <p class="text-center">L'essentiel pour un cat-sitting serein.</p>
+            <h2>Prêts pour le départ ?</h2>
+            <p class="text-center">Pour un cat-sitting serein, voici les essentiels à préparer.</p>
             
             <div class="grid-3">
-                <div>
-                    <h3>Logement</h3>
+                <div class="card">
+                    <h3>🏠 Logement</h3>
                     <ul class="checklist-list">
-                        <li>Jeu de clés testé</li>
-                        <li>Coordonnées d'un voisin</li>
-                        <li>Consignes courrier/plantes</li>
+                        <li>Clés testées ou code</li>
+                        <li>Contact voisin/ami</li>
+                        <li>Consignes plantes/courrier</li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Chat</h3>
+                <div class="card">
+                    <h3>🐈 Chat</h3>
                     <ul class="checklist-list">
                         <li>Carnet de santé visible</li>
-                        <li>Stock nourriture & litière</li>
-                        <li>Caisse de transport accessible</li>
+                        <li>Stock (litière/repas)</li>
+                        <li>Caisse de transport</li>
+                        <li>Jouets sortis</li>
                     </ul>
                 </div>
-            </div>
-            <div class="text-center" style="margin-top: 40px;">
-                <a href="checklist.html" target="_blank" class="button">Ouvrir la Checklist interactive</a>
+                <div class="card text-center" style="display:flex; flex-direction:column; justify-content:center;">
+                    <h3>Version Complète</h3>
+                    <p>Téléchargez la liste détaillée pour ne rien oublier.</p>
+                    <a href="checklist.html" target="_blank" class="button">Ouvrir la Checklist</a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="blog" class="wrapper" style="background: rgba(0,0,0,0.1);">
+    <section id="blog" class="wrapper dark">
         <div class="inner">
-            <h2 class="text-center">Le Guide du Chat Heureux</h2>
+            <h2>Le Guide du Chat Heureux</h2>
             <div class="grid-3">
                 <article class="card">
                     <h3>Garde à domicile vs Pension</h3>
-                    <p>Pourquoi le chat préfère rester chez lui ? Moins de stress et repères conservés.</p>
-                    <button onclick="openModal('modal-1')" style="background:none; border:none; color:#fff; text-decoration:underline; cursor:pointer; padding:0;">Lire l'article</button>
+                    <p>Pourquoi le chat préfère rester chez lui ? Moins de stress, pas de transport, et ses repères conservés.</p>
+                    <button onclick="openModal('art1')" style="color:#fff; text-decoration:underline; background:none; border:none; cursor:pointer; font-weight:bold;">Lire l'article</button>
                 </article>
                 <article class="card">
                     <h3>Vacances dans le Vaud</h3>
-                    <p>Partez tranquille, je m'occupe de tout : jeux, câlins et sécurité.</p>
-                    <button onclick="openModal('modal-2')" style="background:none; border:none; color:#fff; text-decoration:underline; cursor:pointer; padding:0;">Lire l'article</button>
+                    <p>Partez tranquille. Je m'occupe de tout : nourriture, litière, jeux et câlins à votre domicile.</p>
+                    <button onclick="openModal('art2')" style="color:#fff; text-decoration:underline; background:none; border:none; cursor:pointer; font-weight:bold;">Lire l'article</button>
                 </article>
                 <article class="card">
                     <h3>Chats âgés ou anxieux</h3>
-                    <p>Une attention particulière pour les profils sensibles.</p>
-                    <button onclick="openModal('modal-3')" style="background:none; border:none; color:#fff; text-decoration:underline; cursor:pointer; padding:0;">Lire l'article</button>
+                    <p>Une attention particulière pour les profils sensibles. Douceur et surveillance médicale si besoin.</p>
+                    <button onclick="openModal('art3')" style="color:#fff; text-decoration:underline; background:none; border:none; cursor:pointer; font-weight:bold;">Lire l'article</button>
                 </article>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="newsletter" class="wrapper">
+    <section id="newsletter" class="wrapper">
         <div class="inner text-center">
-            <div style="background: rgba(255,255,255,0.15); padding: 40px; border-radius: 20px;">
+            <div style="background:rgba(255,255,255,0.15); padding:40px; border-radius:20px; max-width:700px; margin:0 auto;">
                 <h2>Restons en contact</h2>
-                <p>Recevez mes conseils félins et mes disponibilités (1 email/mois max).</p>
-                <form style="max-width: 500px; margin: 0 auto;">
+                <p>Rejoignez la communauté Nat'Patoune ! Conseils bien-être et disponibilités.</p>
+                <form action="#" style="max-width:500px; margin:0 auto;">
                     <input type="email" placeholder="Votre email" required>
-                    <label style="font-size: 0.8em; display:block; text-align:left; margin-bottom:15px;">
+                    <label style="display:block; text-align:left; font-size:0.8em; margin-bottom:15px;">
                         <input type="checkbox" style="width:auto; margin-right:10px;" required> J'accepte de recevoir l'infolettre.
                     </label>
                     <button type="submit" class="button">S'inscrire</button>
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="contact" class="wrapper" style="background: rgba(0,0,0,0.1);">
+    <section id="contact" class="wrapper dark">
         <div class="inner">
-            <h2 class="text-center">Me contacter</h2>
-            <div style="max-width: 600px; margin: 0 auto;">
+            <h2>Une réservation ? Une question ?</h2>
+            <div style="max-width:600px; margin:0 auto;">
                 <form action="#" method="POST">
-                    <input type="text" placeholder="Votre Nom" required>
-                    <input type="email" placeholder="Votre Email" required>
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+                        <input type="text" placeholder="Votre Nom" required>
+                        <input type="email" placeholder="Votre Email" required>
+                    </div>
                     <select>
                         <option>Demande de devis</option>
                         <option>Renseignement</option>
+                        <option>Autre</option>
                     </select>
-                    <textarea rows="5" placeholder="Votre message..." required></textarea>
+                    <textarea rows="5" placeholder="Comment puis-je vous aider ?" required></textarea>
                     <div class="text-center">
                         <button type="submit" class="button">Envoyer ma demande</button>
                     </div>
                 </form>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="wrapper text-center" style="padding: 2em; font-size: 0.8em; opacity: 0.7;">
-        <p>&copy; 2026 Nat'Patoune - Tous droits réservés.</p>
-    </div>
+    <footer>
+        <div class="inner">
+            <p>&copy; 2026 Nat'Patoune - Tous droits réservés.</p>
+            <p style="font-size:0.8em; opacity:0.6;">Site réalisé avec ❤️ pour les chats.</p>
+        </div>
+    </footer>
 
-    <div id="modal-1" class="modal">
+    <div id="art1" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('modal-1')">&times;</span>
-            <h2 style="color:#665fee;">Garde à domicile vs Pension</h2>
-            <p>Le chat est territorial. Le déplacer en pension génère un stress important. La garde à domicile permet de respecter son environnement, ses odeurs et sa routine.</p>
+            <span class="close" onclick="closeModal('art1')">&times;</span>
+            <h2>Garde à domicile vs Pension</h2>
+            <p>Le chat est un animal territorial. Le déplacer en pension génère un stress important (bruits, odeurs d'autres animaux, cage).</p>
+            <p><strong>La solution domicile :</strong></p>
+            <ul>
+                <li>Il garde ses repères et son canapé.</li>
+                <li>Pas de stress du transport.</li>
+                <li>Je passe chaque jour pour s'occuper de lui.</li>
+            </ul>
         </div>
     </div>
-    <div id="modal-2" class="modal">
+
+    <div id="art2" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('modal-2')">&times;</span>
-            <h2 style="color:#665fee;">Vacances sereines</h2>
-            <p>Je passe chaque jour pour nourrir, nettoyer et surtout interagir avec votre chat. Vous recevez des photos quotidiennes via WhatsApp.</p>
+            <span class="close" onclick="closeModal('art2')">&times;</span>
+            <h2>Vacances sereines</h2>
+            <p>Profitez de vos vacances, je prends le relais !</p>
+            <p>À chaque visite :</p>
+            <ul>
+                <li>Renouvellement eau et nourriture.</li>
+                <li>Nettoyage complet de la litière.</li>
+                <li>Temps de jeu et câlins.</li>
+                <li>Photos envoyées sur WhatsApp pour vous rassurer.</li>
+            </ul>
         </div>
     </div>
-    <div id="modal-3" class="modal">
+
+    <div id="art3" class="modal">
         <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('modal-3')">&times;</span>
-            <h2 style="color:#665fee;">Chats sensibles</h2>
-            <p>J'ai l'expérience requise pour administrer des médicaments et détecter les signes de mal-être chez les chats âgés ou anxieux.</p>
+            <span class="close" onclick="closeModal('art3')">&times;</span>
+            <h2>Chats sensibles</h2>
+            <p>J'ai une affinité particulière avec les chats timides, âgés ou ayant besoin de soins.</p>
+            <p>Je suis formée pour administrer les médicaments (comprimés, insuline) et je respecte le rythme de l'animal sans jamais forcer le contact.</p>
         </div>
     </div>
 
     <script>
-        function openModal(id) { document.getElementById(id).style.display = 'flex'; }
-        function closeModal(id) { document.getElementById(id).style.display = 'none'; }
-        // Fermer si on clique en dehors
+        function openModal(id) { document.getElementById(id).style.display = "flex"; }
+        function closeModal(id) { document.getElementById(id).style.display = "none"; }
         window.onclick = function(event) {
-            if (event.target.className === 'modal') {
+            if (event.target.classList.contains('modal')) {
                 event.target.style.display = "none";
             }
         }
