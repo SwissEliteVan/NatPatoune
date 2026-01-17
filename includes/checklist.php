@@ -1,21 +1,46 @@
-<section id="checklist" class="py-20 bg-brand-cream">
-    <div class="container mx-auto px-4">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-title font-bold text-brand-text mb-6">Checklist à obtenir</h2>
-            <ul class="list-disc pl-5 space-y-3 text-gray-600 mb-8">
-                <li><strong>Accès &amp; comptes :</strong> hébergement, DNS, CMS, FTP/SFTP, admin WordPress, Google (Analytics/Search Console), Meta Business, Google Business Profile</li>
-                <li><strong>Contenus &amp; assets :</strong> logos, photos, icônes, documents (CGV, contrat, etc.), mentions légales, politique de confidentialité</li>
-                <li><strong>Paramètres de conversion :</strong> email de réception formulaire, téléphone, WhatsApp, zones desservies</li>
-                <li><strong>Outils marketing :</strong> plateforme newsletter choisie, accès SMTP, domaine d'envoi, adresse d'expéditeur</li>
-                <li><strong>Tracking :</strong> consentement cookies si présent, événements (submit form, click tel, click whatsapp)</li>
-                <li><strong>Validation :</strong> qui valide, délai, process de mise en prod</li>
-            </ul>
+<section id="checklist" class="py-24 bg-brand-cream relative overflow-hidden">
+    <div class="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-brand-purple opacity-5 rounded-full blur-3xl"></div>
 
-            <div class="text-center md:text-left">
-                <a href="[CHECKLIST_PDF_URL]" class="inline-block bg-brand-purple text-white font-bold py-3 px-8 rounded-xl hover:bg-brand-purple-dark transition shadow-md" download>
-                    <i class="fas fa-download mr-2"></i> Télécharger la checklist
-                </a>
-                <p class="text-xs text-gray-400 mt-2 italic">* Document PDF (Lien à confirmer)</p>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-title font-bold text-brand-text mb-4">Prêts pour le départ ?</h2>
+                <p class="text-lg text-gray-600">Pour un cat-sitting en toute sérénité, voici les essentiels à préparer avant mon arrivée.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-soft p-8 md:p-12 border border-gray-100">
+                <div class="grid md:grid-cols-2 gap-8 mb-10">
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-purple mb-4 flex items-center">
+                            <i class="fas fa-home mr-3"></i> Accès & Logement
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i> <span>Jeu de clés testé ou code d'accès</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i> <span>Coordonnées d'un proche (ami/voisin)</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i> <span>Consignes pour les plantes / courrier</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-purple mb-4 flex items-center">
+                            <i class="fas fa-cat mr-3"></i> Pour votre Chat
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i> <span>Carnet de santé à disposition</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i> <span>Stock suffisant (litière, pâtée, croquettes)</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i> <span>Caisse de transport accessible</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-2 text-xs"></i> <span>Jouets préférés sortis</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center border-t border-gray-100 pt-8">
+                    <a href="#" class="inline-flex items-center justify-center bg-brand-purple text-white font-bold py-4 px-8 rounded-xl hover:bg-brand-purple-dark transition transform hover:-translate-y-1 shadow-md group">
+                        <i class="fas fa-file-download mr-3 group-hover:animate-bounce"></i> 
+                        Télécharger la Check-list complète (PDF)
+                    </a>
+                    <p class="text-xs text-gray-400 mt-3 italic">* Document gratuit à imprimer</p>
+                </div>
             </div>
         </div>
     </div>
