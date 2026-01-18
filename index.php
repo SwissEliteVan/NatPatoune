@@ -1,38 +1,36 @@
+<?php
+// Page d'accueil principale
+?>
 <!DOCTYPE html>
-<html lang="fr-CH" class="scroll-smooth">
-<?php include __DIR__ . '/includes/head.php'; ?>
-<body class="bg-brand-cream text-brand-text overflow-x-hidden">
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat'Patoune - Garde de chats Vaud</title>
+    <link rel="stylesheet" href="themes/sky/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
 
-<?php include __DIR__ . '/includes/cookie-banner.php'; ?>
-<?php include __DIR__ . '/includes/offline-message.php'; ?>
-<?php include __DIR__ . '/includes/modal-promo.php'; ?>
-<?php include __DIR__ . '/includes/fabs.php'; ?>
-<?php include __DIR__ . '/includes/topbar.php'; ?>
-<?php include __DIR__ . '/includes/nav.php'; ?>
+    <?php include 'includes/nav.php'; ?>
+    <?php include 'includes/hero.php'; ?>
+    <?php include 'includes/services.php'; ?>
+    <?php include 'includes/checklist.php'; ?>
+    <?php include 'includes/blog.php'; ?>
+    <?php include 'includes/contact.php'; ?>
+    
+    <footer class="wrapper text-center" style="background: rgba(0,0,0,0.3);">
+        <div class="inner">
+            <p>&copy; 2026 Nat'Patoune. Tous droits réservés.</p>
+        </div>
+    </footer>
 
-<?php include __DIR__ . '/includes/hero.php'; ?>
-<?php include __DIR__ . '/includes/services.php'; ?>
-<?php include __DIR__ . '/includes/cadeau.php'; ?>
-<?php include __DIR__ . '/includes/zones-tarifs.php'; ?>
-<?php include __DIR__ . '/includes/blog.php'; ?>
-<?php include __DIR__ . '/includes/galerie.php'; ?>
-<?php include __DIR__ . '/includes/avis.php'; ?>
-<?php include __DIR__ . '/includes/propos.php'; ?>
-<?php include __DIR__ . '/includes/contact.php'; ?>
-<?php include __DIR__ . '/includes/newsletter.php'; ?>
-<?php include __DIR__ . '/includes/checklist.php'; ?>
-<?php include __DIR__ . '/includes/footer.php'; ?>
-
-<?php include __DIR__ . '/modals/modal-cadeau.php'; ?>
-<?php include __DIR__ . '/modals/modal-cgv.php'; ?>
-<?php include __DIR__ . '/modals/modal-privacy.php'; ?>
-<?php include __DIR__ . '/modals/modal-certificat.php'; ?>
-<?php include __DIR__ . '/modals/modal-mentions.php'; ?>
-<?php include __DIR__ . '/modals/article-1.php'; ?>
-<?php include __DIR__ . '/modals/article-2.php'; ?>
-<?php include __DIR__ . '/modals/article-3.php'; ?>
-
-<?php include __DIR__ . '/includes/scripts.php'; ?>
+    <script>
+        // Script simple pour les modales
+        function openModal(id) { document.getElementById(id).style.display = "flex"; }
+        function closeModal(id) { document.getElementById(id).style.display = "none"; }
+        window.onclick = function(e) { if(e.target.className == 'modal') e.target.style.display = "none"; }
+    </script>
 
 </body>
 </html>
