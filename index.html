@@ -733,73 +733,133 @@
         </div>
     </section>
 
-    <!-- Blog -->
-    <section id="blog" class="py-16 md:py-24 bg-white" aria-labelledby="blog-heading">
+    <!-- Protocoles de Sérénité -->
+    <section id="protocoles" class="py-16 md:py-20 bg-brand-beige dark:bg-gray-900">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-10">
-                <span class="text-brand-purple font-bold tracking-wider uppercase text-sm">Conseils d'experte</span>
-                <h2 id="blog-heading" class="text-3xl md:text-4xl font-title font-bold text-brand-text mt-2 mb-4">Le Guide du Chat Heureux</h2>
-                <p class="text-gray-500 max-w-2xl mx-auto">Des articles courts, concrets et testés sur le terrain pour mieux comprendre les besoins de votre chat.</p>
-                <div class="flex flex-wrap justify-center gap-3 mt-6 text-sm text-brand-text">
-                    <span class="inline-flex items-center gap-2 bg-brand-purple/10 text-brand-purple px-4 py-1.5 rounded-full font-semibold"><i class="fas fa-check-circle"></i> Checklists pratiques</span>
-                    <span class="inline-flex items-center gap-2 bg-brand-pink/15 text-brand-purple px-4 py-1.5 rounded-full font-semibold"><i class="fas fa-heart"></i> Bien-être quotidien</span>
-                    <span class="inline-flex items-center gap-2 bg-brand-purple/10 text-brand-purple px-4 py-1.5 rounded-full font-semibold"><i class="fas fa-calendar-alt"></i> Préparer les vacances</span>
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-brand-purple font-medium uppercase text-[10px] tracking-[0.2em]">Espace Propriétaires</span>
+                    <h2 class="text-3xl md:text-4xl font-title font-light text-brand-text dark:text-white mt-3 mb-4">Protocoles de Sérénité</h2>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm max-w-xl mx-auto">Une préparation méthodique pour garantir une garde sans faille.</p>
                 </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Protocole Logement -->
+                    <div>
+                        <div class="flex items-center gap-2 mb-6 pb-3 border-b border-gray-200 dark:border-gray-800">
+                            <i class="fas fa-home text-brand-purple text-xs"></i>
+                            <h3 class="text-sm font-title font-medium text-brand-text dark:text-white uppercase tracking-wider">Protocole Logement</h3>
+                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="logement-1" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-1" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Sécuriser fenêtres et balcons</label>
+                            </li>
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="logement-2" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-2" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Gestion du courrier</label>
+                            </li>
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="logement-3" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-3" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Évacuation des déchets</label>
+                            </li>
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="logement-4" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-4" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Vérifier points d'eau</label>
+                            </li>
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="logement-5" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-5" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Laisser clés et codes d'accès</label>
+                            </li>
+                        </ul>
+                        <button onclick="resetChecklist('logement')" class="text-[10px] text-gray-400 hover:text-brand-purple transition mt-5 uppercase tracking-widest">Réinitialiser</button>
+                    </div>
+
+                    <!-- Protocole Félin -->
+                    <div>
+                        <div class="flex items-center gap-2 mb-6 pb-3 border-b border-gray-200 dark:border-gray-800">
+                            <i class="fas fa-cat text-brand-purple text-xs"></i>
+                            <h3 class="text-sm font-title font-medium text-brand-text dark:text-white uppercase tracking-wider">Protocole Félin</h3>
+                        </div>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="felin-1" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-1" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Stock nourriture et litière</label>
+                            </li>
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="felin-2" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-2" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Carnet de santé accessible</label>
+                            </li>
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="felin-3" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-3" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Contacts urgence (vétérinaire)</label>
+                            </li>
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="felin-4" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-4" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Habitudes litière et hygiène</label>
+                            </li>
+                            <li class="flex items-start gap-2 group">
+                                <input type="checkbox" id="felin-5" class="checklist-item mt-1 w-3.5 h-3.5 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-5" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm">Consignes soins spécifiques</label>
+                            </li>
+                        </ul>
+                        <button onclick="resetChecklist('felin')" class="text-[10px] text-gray-400 hover:text-brand-purple transition mt-5 uppercase tracking-widest">Réinitialiser</button>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-[9px] text-gray-400 dark:text-gray-600 uppercase tracking-wider">Sauvegarde locale automatique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section id="blog" class="py-16 md:py-24 bg-white dark:bg-gray-900" aria-labelledby="blog-heading">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-brand-purple font-medium uppercase text-[10px] tracking-[0.2em]">Conseils d'experte</span>
+                <h2 id="blog-heading" class="text-3xl md:text-4xl font-title font-light text-brand-text dark:text-white mt-3 mb-4">Le Guide du Chat Heureux</h2>
+                <p class="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto text-sm">Expertise et bien-être félin par votre cat-sitter certifiée.</p>
             </div>
 
-            <div class="bg-brand-purple/5 border border-brand-purple/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 mb-10">
-                <div>
-                    <p class="text-sm uppercase tracking-widest text-brand-purple font-semibold">Astuce rapide</p>
-                    <h3 class="text-xl md:text-2xl font-title font-bold text-brand-text mt-2">Planifiez une routine stable avant votre départ.</h3>
-                    <p class="text-gray-600 mt-2 max-w-2xl">En installant les visites et la nourriture sur les mêmes horaires dès la semaine précédente, votre chat vivra l’absence plus sereinement.</p>
-                </div>
-                <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-brand-purple text-white font-bold px-6 py-3 rounded-xl hover:bg-brand-purple-dark transition">Demander un conseil</a>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <article onclick="openModal('article-1')" class="group cursor-pointer bg-gray-50 rounded-2xl p-4 hover:shadow-lg transition flex flex-col h-full border border-gray-100">
-                    <figure class="rounded-xl overflow-hidden mb-4 h-52 bg-gray-200 relative m-0 shrink-0">
-                        <img src="assets/img/garde-chat-domicile-sans-stress-vaud.webp" width="1200" height="675" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Chat détendu pendant garde à domicile" loading="lazy">
-                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-purple">Bien-être</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <!-- Article 1 -->
+                <article onclick="openModal('article-1')" class="group cursor-pointer flex flex-col h-full transition-all duration-300">
+                    <figure class="rounded-2xl overflow-hidden mb-5 h-56 bg-gray-200 relative m-0">
+                        <img src="assets/img/garde-chat-domicile-sans-stress-vaud.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Garde à domicile" loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/90 dark:bg-gray-900/90 px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest text-brand-purple">Bien-être</div>
                     </figure>
-                    <div class="flex flex-col flex-grow">
-                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
-                            <span class="inline-flex items-center gap-1"><i class="far fa-clock"></i> 4 min</span>
-                            <span class="inline-flex items-center gap-1"><i class="far fa-calendar"></i> Mis à jour 2024</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 group-hover:text-brand-purple leading-tight text-brand-text">Pourquoi la garde à domicile réduit-elle le stress de votre chat&nbsp;?</h3>
-                        <p class="text-sm text-gray-600 line-clamp-3 mb-4 flex-grow">La garde à domicile s'avère être une solution apaisante pour les chats, qui sont très sensibles aux changements de territoire.</p>
-                        <span class="text-sm text-brand-purple font-bold mt-auto inline-flex items-center">Lire l'article <i class="fas fa-arrow-right ml-2 text-xs transition-transform group-hover:translate-x-1"></i></span>
+                    <div class="flex flex-col flex-grow text-left">
+                        <h3 class="font-medium text-lg mb-2 group-hover:text-brand-purple transition-colors leading-snug dark:text-white">Pourquoi la garde à domicile réduit-elle le stress de votre chat ?</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mb-3 flex-grow">La préservation du territoire est le facteur clé du bien-être félin durant votre absence.</p>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-brand-purple inline-flex items-center">Lire l'article <i class="fas fa-chevron-right ml-2 text-[7px]"></i></span>
                     </div>
                 </article>
-                 <article onclick="openModal('article-2')" class="group cursor-pointer bg-gray-50 rounded-2xl p-4 hover:shadow-lg transition flex flex-col h-full border border-gray-100">
-                    <figure class="rounded-xl overflow-hidden mb-4 h-52 bg-gray-200 relative m-0 shrink-0">
-                        <img src="assets/img/cat-sitting-domicile-vacances-suisse.webp" width="1200" height="675" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Chat relax chez lui pendant vacances" loading="lazy">
-                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-purple">Vacances</div>
+
+                <!-- Article 2 -->
+                <article onclick="openModal('article-2')" class="group cursor-pointer flex flex-col h-full transition-all duration-300">
+                    <figure class="rounded-2xl overflow-hidden mb-5 h-56 bg-gray-200 relative m-0">
+                        <img src="assets/img/cat-sitting-domicile-vacances-suisse.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Préparation départ" loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/90 dark:bg-gray-900/90 px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest text-brand-purple">Préparation</div>
                     </figure>
-                    <div class="flex flex-col flex-grow">
-                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
-                            <span class="inline-flex items-center gap-1"><i class="far fa-clock"></i> 5 min</span>
-                            <span class="inline-flex items-center gap-1"><i class="far fa-calendar"></i> Conseils vacances</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 group-hover:text-brand-purple leading-tight text-brand-text">Vacances tranquilles : faire garder son chat à domicile dans le canton de Vaud</h3>
-                        <p class="text-sm text-gray-600 line-clamp-3 mb-4 flex-grow">La garde à domicile dans le canton de Vaud permet de profiter de ses vacances sans se soucier de son animal.</p>
-                        <span class="text-sm text-brand-purple font-bold mt-auto inline-flex items-center">Lire l'article <i class="fas fa-arrow-right ml-2 text-xs transition-transform group-hover:translate-x-1"></i></span>
+                    <div class="flex flex-col flex-grow text-left">
+                        <h3 class="font-medium text-lg mb-2 group-hover:text-brand-purple transition-colors leading-snug dark:text-white">Préparer son départ sereinement</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mb-3 flex-grow">Organisation et anticipation pour une absence sans souci et un retour apaisé.</p>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-brand-purple inline-flex items-center">Lire l'article <i class="fas fa-chevron-right ml-2 text-[7px]"></i></span>
                     </div>
                 </article>
-                 <article onclick="openModal('article-3')" class="group cursor-pointer bg-gray-50 rounded-2xl p-4 hover:shadow-lg transition flex flex-col h-full border border-gray-100">
-                    <figure class="rounded-xl overflow-hidden mb-4 h-52 bg-gray-200 relative m-0 shrink-0">
-                        <img src="assets/img/chaton-cache-couverture.webp" width="1200" height="675" class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-110" alt="Soin médical à domicile pour chat" loading="lazy">
-                        <div class="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-brand-purple">Soins Spécifiques</div>
+
+                <!-- Article 3 -->
+                <article onclick="openModal('article-3')" class="group cursor-pointer flex flex-col h-full transition-all duration-300">
+                    <figure class="rounded-2xl overflow-hidden mb-5 h-56 bg-gray-200 relative m-0">
+                        <img src="assets/img/chaton-cache-couverture.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Chat timide" loading="lazy">
+                        <div class="absolute top-3 left-3 bg-white/90 dark:bg-gray-900/90 px-3 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest text-brand-purple">Comportement</div>
                     </figure>
-                    <div class="flex flex-col flex-grow">
-                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
-                            <span class="inline-flex items-center gap-1"><i class="far fa-clock"></i> 6 min</span>
-                            <span class="inline-flex items-center gap-1"><i class="far fa-calendar"></i> Chats sensibles</span>
-                        </div>
-                        <h3 class="font-bold text-lg mb-3 group-hover:text-brand-purple leading-tight text-brand-text">Chat âgé ou anxieux : pourquoi le cat-sitting est indispensable</h3>
-                        <p class="text-sm text-gray-600 line-clamp-3 mb-4 flex-grow">Les chats âgés ont des habitudes profondément ancrées. Un changement de routine ou d'environnement peut accentuer des pathologies existantes.</p>
-                        <span class="text-sm text-brand-purple font-bold mt-auto inline-flex items-center">Lire l'article <i class="fas fa-arrow-right ml-2 text-xs transition-transform group-hover:translate-x-1"></i></span>
+                    <div class="flex flex-col flex-grow text-left">
+                        <h3 class="font-medium text-lg mb-2 group-hover:text-brand-purple transition-colors leading-snug dark:text-white">Apprivoiser les chats timides</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 mb-3 flex-grow">Techniques douces et respectueuses pour gagner la confiance des félins craintifs.</p>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-brand-purple inline-flex items-center">Lire l'article <i class="fas fa-chevron-right ml-2 text-[7px]"></i></span>
                     </div>
                 </article>
             </div>
@@ -876,6 +936,64 @@
         </div>
     </section>
 
+    <!-- Newsletter Guide Gratuit -->
+    <section id="newsletter-lead" class="py-20 md:py-24 bg-brand-beige dark:bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-10">
+                    <span class="text-brand-purple font-medium uppercase text-[10px] tracking-[0.2em]">Guide Professionnel</span>
+                    <h2 class="text-3xl md:text-4xl font-title font-light text-brand-text dark:text-white mt-3 mb-4">
+                        10 astuces pour un chat serein
+                    </h2>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm max-w-xl mx-auto leading-relaxed">
+                        Recevez gratuitement mon guide expert pour préparer au mieux votre absence et garantir le bien-être de votre compagnon.
+                    </p>
+                </div>
+
+                <form id="leadMagnetForm" class="bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-8 shadow-sm">
+                    <div class="space-y-4">
+                        <input
+                            type="text"
+                            id="leadPrenom"
+                            name="prenom"
+                            placeholder="Prénom"
+                            class="w-full px-4 py-3 bg-transparent text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700 focus:border-brand-purple focus:outline-none transition text-sm"
+                            required
+                        >
+                        <input
+                            type="email"
+                            id="leadEmail"
+                            name="email"
+                            placeholder="Adresse email"
+                            class="w-full px-4 py-3 bg-transparent text-gray-700 dark:text-gray-300 border-b border-gray-200 dark:border-gray-700 focus:border-brand-purple focus:outline-none transition text-sm"
+                            required
+                        >
+                        <button
+                            type="submit"
+                            class="w-full bg-brand-purple text-white font-medium py-3 px-6 rounded-lg hover:bg-brand-purple-dark transition mt-6 text-sm uppercase tracking-wider"
+                        >
+                            Recevoir le guide
+                        </button>
+                        <p class="text-[10px] text-gray-400 text-center mt-4 uppercase tracking-wider">
+                            Données sécurisées · Sans engagement · Désinscription libre
+                        </p>
+                    </div>
+                </form>
+
+                <!-- Message de succès -->
+                <div id="leadMagnetSuccess" class="hidden bg-white dark:bg-gray-800 border border-brand-purple/20 rounded-xl p-8 text-center">
+                    <div class="w-16 h-16 border-2 border-brand-purple rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-check text-2xl text-brand-purple"></i>
+                    </div>
+                    <h3 class="text-xl font-title font-light text-brand-text dark:text-white mb-2">Inscription confirmée</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        Votre guide vous sera envoyé sous peu. Vérifiez votre boîte de réception.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="py-20 bg-brand-purple text-white">
         <div class="container mx-auto px-4">
@@ -911,58 +1029,141 @@
     </section>
 
     <!-- Newsletter -->
-    <section id="newsletter" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-brand-cream rounded-3xl p-8 md:p-12 shadow-soft">
-                <div class="mb-8">
-                    <h2 class="text-3xl font-title font-bold text-brand-text mb-4">Newsletter</h2>
-                    <p class="text-gray-600">Recevez des conseils pratiques pour le bien-être de votre chat et des rappels utiles avant vos départs.</p>
-                    <p class="text-gray-600">1 à 2 e-mails par mois, avec désinscription en un clic.</p>
-                </div>
-                <form id="newsletterForm" class="space-y-4" action="[FORM_ACTION_URL]" method="post">
-                    <div>
-                        <label for="newsletterPrenom" class="block text-sm font-bold text-gray-700 mb-2">Prénom (optionnel)</label>
-                        <input type="text" id="newsletterPrenom" name="prenom" autocomplete="given-name" class="w-full p-3 bg-white rounded-xl border border-gray-200 focus:border-brand-purple focus:ring-1 focus:ring-brand-purple outline-none">
-                    </div>
-                    <div>
-                        <label for="newsletterEmail" class="block text-sm font-bold text-gray-700 mb-2">Email</label>
-                        <input type="email" id="newsletterEmail" name="email" autocomplete="email" required class="w-full p-3 bg-white rounded-xl border border-gray-200 focus:border-brand-purple focus:ring-1 focus:ring-brand-purple outline-none">
-                    </div>
-                    <div class="hidden" aria-hidden="true">
-                        <label for="newsletterCompany" class="block text-sm font-bold text-gray-700 mb-2">Ne pas remplir</label>
-                        <input type="text" id="newsletterCompany" name="company" tabindex="-1" autocomplete="off" class="w-full p-3 bg-white rounded-xl border border-gray-200">
-                    </div>
-                    <label class="flex items-start gap-3 text-sm text-gray-600">
-                        <input type="checkbox" id="newsletterConsent" name="consent" required class="mt-1">
-                        <span>J'accepte de recevoir des e-mails de Nat'Patoune et je peux me désinscrire à tout moment.</span>
-                    </label>
-                    <button type="submit" class="w-full bg-brand-purple text-white font-bold py-3 rounded-xl hover:bg-brand-purple-dark transition">Je m'inscris</button>
-                    <p class="text-xs text-gray-500">Double opt-in recommandé si votre plateforme le permet. <a href="[LIEN_POLITIQUE_CONFIDENTIALITE]" class="underline hover:text-brand-purple">Politique de confidentialité</a></p>
-                </form>
-                <div id="newsletterSuccess" class="hidden text-center py-6" aria-live="polite">
-                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-check text-2xl text-green-500"></i>
-                    </div>
-                    <h3 class="text-xl font-title font-bold text-brand-text mb-2">Merci pour votre inscription !</h3>
-                    <p class="text-gray-600 text-sm">Vous recevrez un e-mail de confirmation. Pensez à vérifier vos spams si besoin.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Checklist à obtenir -->
-    <section id="checklist" class="py-20 bg-brand-cream">
+    <!-- Protocoles de Sérénité -->
+    <section id="checklist" class="py-20 md:py-24 bg-white dark:bg-gray-900">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-title font-bold text-brand-text mb-6">Checklist à obtenir</h2>
-                <ul class="list-disc pl-5 space-y-3 text-gray-600">
-                    <li><strong>Accès &amp; comptes :</strong> hébergement, DNS, CMS, FTP/SFTP, admin WordPress, Google (Analytics/Search Console), Meta Business, Google Business Profile</li>
-                    <li><strong>Contenus &amp; assets :</strong> logos, photos, icônes, documents (CGV, contrat, etc.), mentions légales, politique de confidentialité</li>
-                    <li><strong>Paramètres de conversion :</strong> email de réception formulaire, téléphone, WhatsApp, zones desservies</li>
-                    <li><strong>Outils marketing :</strong> plateforme newsletter choisie, accès SMTP, domaine d’envoi, adresse d’expéditeur</li>
-                    <li><strong>Tracking :</strong> consentement cookies si présent, événements (submit form, click tel, click whatsapp)</li>
-                    <li><strong>Validation :</strong> qui valide, délai, process de mise en prod</li>
-                </ul>
+                <div class="text-center mb-16">
+                    <span class="text-brand-purple font-medium uppercase text-[10px] tracking-[0.2em]">Espace Propriétaires</span>
+                    <h2 class="text-3xl md:text-4xl font-title font-light text-brand-text dark:text-white mt-3 mb-4">
+                        Protocoles de Sérénité
+                    </h2>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm max-w-xl mx-auto">
+                        Une préparation méthodique pour garantir une garde sans faille.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Protocole Logement -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-8 pb-4 border-b border-gray-100 dark:border-gray-800">
+                            <i class="fas fa-home text-brand-purple text-sm"></i>
+                            <h3 class="text-lg font-title font-light text-brand-text dark:text-white uppercase tracking-wider text-sm">Protocole Logement</h3>
+                        </div>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 group transition-opacity">
+                                <input type="checkbox" id="logement-1" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-1" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Sécuriser les accès (fenêtres, balcons)
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="logement-2" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-2" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Préparer les clés et codes d'accès
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="logement-3" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-3" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Ranger les objets fragiles ou dangereux
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="logement-4" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-4" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Organiser le matériel de nettoyage
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="logement-5" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-5" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Configurer l'éclairage et la sécurité
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="logement-6" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="logement-6" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Laisser les instructions spécifiques
+                                </label>
+                            </li>
+                        </ul>
+
+                        <button onclick="resetChecklist('logement')" class="text-xs text-gray-400 hover:text-brand-purple transition mt-6 uppercase tracking-widest">
+                            Réinitialiser
+                        </button>
+                    </div>
+
+                    <!-- Protocole Félin -->
+                    <div>
+                        <div class="flex items-center gap-3 mb-8 pb-4 border-b border-gray-100 dark:border-gray-800">
+                            <i class="fas fa-cat text-brand-purple text-sm"></i>
+                            <h3 class="text-lg font-title font-light text-brand-text dark:text-white uppercase tracking-wider text-sm">Protocole Félin</h3>
+                        </div>
+
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="felin-1" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-1" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Vérifier les stocks (nourriture, litière)
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="felin-2" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-2" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Préparer le carnet de santé
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="felin-3" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-3" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Noter les coordonnées vétérinaire
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="felin-4" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-4" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Expliquer les habitudes alimentaires
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="felin-5" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-5" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Détailler les soins et traitements
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="felin-6" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-6" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Préciser les zones interdites
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="felin-7" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-7" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Laisser vos coordonnées à l'étranger
+                                </label>
+                            </li>
+                            <li class="flex items-start gap-3 group">
+                                <input type="checkbox" id="felin-8" class="checklist-item mt-0.5 w-4 h-4 text-brand-purple border-gray-300 rounded-sm cursor-pointer">
+                                <label for="felin-8" class="flex-1 text-gray-600 dark:text-gray-400 cursor-pointer select-none text-sm leading-relaxed">
+                                    Confirmer les horaires de visite
+                                </label>
+                            </li>
+                        </ul>
+
+                        <button onclick="resetChecklist('felin')" class="text-xs text-gray-400 hover:text-brand-purple transition mt-6 uppercase tracking-widest">
+                            Réinitialiser
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-12 text-center">
+                    <p class="text-[10px] text-gray-400 dark:text-gray-600 uppercase tracking-wider">
+                        Sauvegarde locale automatique
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -1639,29 +1840,31 @@
             <div class="p-8 overflow-y-auto custom-scrollbar bg-white">
                 <article class="blog-article prose max-w-none text-gray-600" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="mb-6 border-b border-gray-100 pb-6">
-                        <div class="text-xs font-bold text-brand-purple uppercase tracking-wider mb-2">Organisation & Sérénité</div>
-                        <h2 itemprop="headline" class="text-3xl font-title font-bold text-brand-text mb-4">Vacances tranquilles : faire garder son chat à domicile dans le canton de Vaud</h2>
+                        <div class="text-xs font-bold text-brand-purple uppercase tracking-wider mb-2">Organisation & Préparation</div>
+                        <h2 itemprop="headline" class="text-3xl font-title font-bold text-brand-text mb-4">Préparer son départ sereinement</h2>
                         <div class="flex items-center text-sm text-gray-500">
                             <span class="font-medium">Par Nat'Patoune</span>
                             <span class="mx-2">•</span>
-                            <span>Temps de lecture : 3 min</span>
+                            <span>Temps de lecture : 4 min</span>
                         </div>
                     </header>
                     <div itemprop="articleBody">
-                        <p class="font-medium text-lg text-gray-700 mb-6">La garde à domicile dans le canton de Vaud permet de profiter de ses vacances sans se soucier de son animal. Elle garantit un cadre rassurant pour le chat, tout en assurant la sécurité du domicile. Une organisation claire (calendrier, instructions, contacts) associée à un professionnel de confiance permet de concilier tranquillité d'esprit et bien-être animal.</p>
-                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Pourquoi planifier à l'avance</h2>
-                        <p>Les périodes de vacances scolaires sont très demandées. Réserver votre cat-sitter plusieurs semaines à l'avance vous assure de la disponibilité et permet d'organiser sereinement la pré-visite obligatoire.</p>
-                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Sécuriser la maison avant de partir</h2>
-                        <p>Avant votre départ, pensez à fermer les fenêtres, sécuriser les balcons si nécessaire et ranger les objets dangereux. Je veille également à relever le courrier et à donner vie à votre maison (lumières, aération) pour dissuader les intrusions.</p>
-                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Maintenir la routine du chat</h2>
-                        <h3 class="text-lg font-bold text-brand-text mt-4 mb-2">Nourriture, jeux, soins</h3>
-                        <p>Je m'engage à respecter scrupuleusement les habitudes alimentaires de votre chat, ses moments de jeu préférés et, si besoin, l'administration de soins médicaux.</p>
-                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Choisir un cat-sitter fiable</h2>
-                        <p>Opter pour une professionnelle comme Nat'Patoune, c'est la garantie d'un service sérieux. Vous recevez des nouvelles et des photos à chaque passage pour rester connecté avec votre compagnon.</p>
+                        <p class="font-medium text-lg text-gray-700 mb-6">Partir en vacances l'esprit tranquille nécessite une organisation méthodique. Une préparation minutieuse du logement et des informations claires pour le cat-sitter garantissent le bien-être de votre compagnon durant votre absence.</p>
+                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Anticiper : la clé de la sérénité</h2>
+                        <p>Réservez votre cat-sitter plusieurs semaines à l'avance, surtout pendant les périodes de vacances scolaires. Cette anticipation permet d'organiser une pré-visite où nous ferons connaissance avec votre chat et validerons ensemble tous les détails pratiques.</p>
+                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Sécuriser le logement</h2>
+                        <p>Quelques jours avant votre départ, vérifiez que toutes les fenêtres et balcons sont sécurisés. Rangez les objets fragiles ou dangereux et assurez-vous que les produits toxiques sont hors de portée. Pensez également à vider les poubelles et à prévoir un espace pour stocker les déchets générés pendant votre absence.</p>
+                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Préparer les provisions</h2>
+                        <h3 class="text-lg font-bold text-brand-text mt-4 mb-2">Nourriture et litière</h3>
+                        <p>Assurez-vous de disposer de suffisamment de nourriture et de litière pour toute la durée de votre absence, plus une marge de sécurité. Indiquez clairement les quantités et horaires des repas.</p>
+                        <h3 class="text-lg font-bold text-brand-text mt-4 mb-2">Carnet de santé et contacts</h3>
+                        <p>Laissez le carnet de santé accessible et notez les coordonnées de votre vétérinaire habituel. Précisez également vos coordonnées à l'étranger et celles d'une personne de confiance en Suisse en cas d'urgence.</p>
+                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Communication et suivi</h2>
+                        <p>Avec Nat'Patoune, vous recevez des photos et des nouvelles régulières de votre compagnon. Cette communication continue vous permet de profiter pleinement de vos vacances en toute quiétude.</p>
                         <div class="bg-brand-cream p-6 rounded-xl mt-8 border border-brand-purple/20">
-                            <h4 class="font-bold text-brand-purple mb-2">Prêt pour les vacances ?</h4>
-                            <p class="text-sm">Vérifions ensemble mes disponibilités pour vos prochaines dates de congés.</p>
-                            <a href="#contact" onclick="closeModal('article-2')" class="inline-block mt-4 text-brand-purple font-bold underline hover:text-brand-purple-dark">Vérifier les dates →</a>
+                            <h4 class="font-bold text-brand-purple mb-2">Besoin d'aide pour organiser votre absence ?</h4>
+                            <p class="text-sm">Contactez-moi pour préparer ensemble une garde parfaitement adaptée à vos besoins.</p>
+                            <a href="#contact" onclick="closeModal('article-2')" class="inline-block mt-4 text-brand-purple font-bold underline hover:text-brand-purple-dark">Planifier ma garde →</a>
                         </div>
                     </div>
                 </article>
@@ -1680,8 +1883,8 @@
             <div class="p-8 overflow-y-auto custom-scrollbar bg-white">
                 <article class="blog-article prose max-w-none text-gray-600" itemscope itemtype="http://schema.org/BlogPosting">
                     <header class="mb-6 border-b border-gray-100 pb-6">
-                        <div class="text-xs font-bold text-brand-purple uppercase tracking-wider mb-2">Soins spécifiques</div>
-                        <h2 itemprop="headline" class="text-3xl font-title font-bold text-brand-text mb-4">Chat âgé ou anxieux : pourquoi le cat-sitting est indispensable</h2>
+                        <div class="text-xs font-bold text-brand-purple uppercase tracking-wider mb-2">Comportement félin</div>
+                        <h2 itemprop="headline" class="text-3xl font-title font-bold text-brand-text mb-4">Apprivoiser les chats timides</h2>
                         <div class="flex items-center text-sm text-gray-500">
                             <span class="font-medium">Par Nat'Patoune</span>
                             <span class="mx-2">•</span>
@@ -1689,19 +1892,22 @@
                         </div>
                     </header>
                     <div itemprop="articleBody">
-                        <p class="font-medium text-lg text-gray-700 mb-6">Les chats âgés ont des habitudes profondément ancrées. Un changement de routine ou d'environnement peut accentuer des pathologies existantes. De leur côté, les chats anxieux réagissent très mal aux séparations ou aux bruits inconnus. Le cat-sitting à domicile répond précisément à leurs besoins : soins spécifiques, alimentation adaptée, interactions calmes et surveillance attentive.</p>
-                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Les besoins particuliers des chats seniors</h2>
-                        <p>Avec l'âge, les chats dorment davantage et peuvent souffrir de douleurs articulaires. Le confort de leur foyer est irremplaçable. De plus, ils nécessitent souvent une surveillance accrue de leur appétit et de leur hydratation.</p>
-                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Anxiété féline : causes et solutions</h2>
-                        <p>Un chat anxieux peut être perturbé par le moindre changement. La garde à domicile minimise ces perturbations en maintenant son environnement stable. Mon approche est basée sur la douceur et la patience, sans jamais forcer le contact.</p>
-                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Le rôle essentiel d'un cat-sitter expérimenté</h2>
-                        <p>Je suis formée pour administrer des médicaments (comprimés, insuline) et pour repérer les signes de mal-être. Pour un chat senior ou malade, cette expertise est une sécurité indispensable.</p>
-                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Conseils pour choisir le bon professionnel</h2>
-                        <p>Assurez-vous que votre gardien est à l'aise avec les soins médicaux si nécessaire et qu'il sait faire preuve de calme. Une pré-visite permet de valider le contact entre le chat et le cat-sitter.</p>
+                        <p class="font-medium text-lg text-gray-700 mb-6">Gagner la confiance d'un chat timide ou craintif demande patience, douceur et compréhension de son langage corporel. Une approche respectueuse, basée sur la progression graduelle et le respect de ses limites, permet d'établir un lien de confiance durable.</p>
+                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Comprendre la timidité féline</h2>
+                        <p>La timidité chez le chat peut résulter d'un manque de socialisation précoce, d'expériences traumatisantes ou simplement de son tempérament naturel. Ces félins ont besoin de temps et d'un environnement sécurisant pour s'ouvrir progressivement.</p>
+                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Les règles d'or de l'approche douce</h2>
+                        <h3 class="text-lg font-bold text-brand-text mt-4 mb-2">Ne jamais forcer le contact</h3>
+                        <p>Laissez toujours le chat venir à vous. Évitez les mouvements brusques, les bruits forts et le contact visuel direct prolongé qui peut être perçu comme une menace. Positionnez-vous légèrement de côté plutôt que face à lui.</p>
+                        <h3 class="text-lg font-bold text-brand-text mt-4 mb-2">Créer un environnement rassurant</h3>
+                        <p>Assurez-vous que le chat dispose de cachettes sécurisantes (boîtes, tunnels, arbres à chat) où il peut se retirer. Ces refuges sont essentiels pour qu'il se sente en sécurité et puisse observer son environnement sans être exposé.</p>
+                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Techniques d'apprivoisement progressif</h2>
+                        <p>Commencez par rester simplement dans la même pièce sans chercher l'interaction. Parlez doucement, proposez des friandises à distance. Avec le temps, réduisez graduellement cette distance. L'utilisation de jeux interactifs (plume, laser) permet de créer des associations positives sans contact direct.</p>
+                        <h2 class="text-xl font-bold text-brand-text mt-8 mb-3">Mon approche en tant que cat-sitter</h2>
+                        <p>Lors de la première visite, j'adopte une attitude calme et non intrusive. Je respecte le rythme de chaque chat, même si cela signifie qu'il reste caché les premiers jours. L'objectif est de créer une relation de confiance durable, pas de forcer un contact immédiat.</p>
                         <div class="bg-brand-cream p-6 rounded-xl mt-8 border border-brand-purple/20">
-                            <h4 class="font-bold text-brand-purple mb-2">Besoin de soins spécifiques ?</h4>
-                            <p class="text-sm">Discutons des besoins médicaux ou comportementaux de votre compagnon pour une prise en charge sur-mesure.</p>
-                            <a href="#contact" onclick="closeModal('article-3')" class="inline-block mt-4 text-brand-purple font-bold underline hover:text-brand-purple-dark">Me contacter →</a>
+                            <h4 class="font-bold text-brand-purple mb-2">Votre chat est timide ou craintif ?</h4>
+                            <p class="text-sm">Je suis habituée à travailler avec des félins sensibles et m'adapte à leur tempérament unique.</p>
+                            <a href="#contact" onclick="closeModal('article-3')" class="inline-block mt-4 text-brand-purple font-bold underline hover:text-brand-purple-dark">Discutons-en →</a>
                         </div>
                     </div>
                 </article>
@@ -2029,6 +2235,125 @@ Merci !`);
                     .catch(error => console.log('SW registration failed:', error));
             });
         }
+
+        // ============================================
+        // CHECKLISTS INTERACTIVES
+        // ============================================
+
+        // Initialisation des checklists au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            initChecklists();
+
+            // Écouter les changements sur toutes les checkboxes
+            const checkboxes = document.querySelectorAll('.checklist-item');
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    handleCheckboxChange(this);
+                    saveChecklistState();
+                });
+            });
+        });
+
+        // Initialiser l'état des checklists depuis localStorage
+        function initChecklists() {
+            const savedState = localStorage.getItem('natpatoune-checklists');
+            if (savedState) {
+                try {
+                    const state = JSON.parse(savedState);
+                    Object.keys(state).forEach(id => {
+                        const checkbox = document.getElementById(id);
+                        if (checkbox) {
+                            checkbox.checked = state[id];
+                            handleCheckboxChange(checkbox);
+                        }
+                    });
+                } catch (e) {
+                    console.error('Erreur lors du chargement des checklists:', e);
+                }
+            }
+        }
+
+        // Gérer le changement d'une checkbox
+        function handleCheckboxChange(checkbox) {
+            const label = checkbox.nextElementSibling;
+            if (checkbox.checked) {
+                label.style.textDecoration = 'line-through';
+                label.style.opacity = '0.5';
+                label.style.color = '#9ca3af'; // gray-400
+            } else {
+                label.style.textDecoration = 'none';
+                label.style.opacity = '1';
+                label.style.color = ''; // Reset to default
+            }
+        }
+
+        // Sauvegarder l'état des checklists
+        function saveChecklistState() {
+            const state = {};
+            const checkboxes = document.querySelectorAll('.checklist-item');
+            checkboxes.forEach(checkbox => {
+                state[checkbox.id] = checkbox.checked;
+            });
+            localStorage.setItem('natpatoune-checklists', JSON.stringify(state));
+        }
+
+        // Réinitialiser une checklist spécifique
+        function resetChecklist(type) {
+            const checkboxes = document.querySelectorAll(`[id^="${type}-"]`);
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+                handleCheckboxChange(checkbox);
+            });
+            saveChecklistState();
+        }
+
+        // ============================================
+        // FORMULAIRE LEAD MAGNET (Newsletter)
+        // ============================================
+
+        const leadMagnetForm = document.getElementById('leadMagnetForm');
+        if (leadMagnetForm) {
+            leadMagnetForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                if (!this.checkValidity()) {
+                    this.reportValidity();
+                    return;
+                }
+
+                // Récupérer les données
+                const prenom = document.getElementById('leadPrenom').value;
+                const email = document.getElementById('leadEmail').value;
+
+                // Simulation de soumission (remplacer par votre propre logique)
+                console.log('Lead Magnet submission:', { prenom, email });
+
+                // Animation de succès
+                leadMagnetForm.classList.add('hidden');
+                const successDiv = document.getElementById('leadMagnetSuccess');
+                if (successDiv) {
+                    successDiv.classList.remove('hidden');
+                }
+
+                // Optionnel: Réinitialiser le formulaire après quelques secondes
+                setTimeout(() => {
+                    leadMagnetForm.reset();
+                }, 3000);
+            });
+        }
+
+        // ============================================
+        // STYLES CSS DYNAMIQUES POUR CHECKLISTS
+        // ============================================
+
+        // Ajouter un style pour le dark mode des labels cochés
+        const style = document.createElement('style');
+        style.textContent = `
+            .dark .checklist-item:checked + label {
+                color: #6b7280 !important; /* gray-500 for dark mode */
+            }
+        `;
+        document.head.appendChild(style);
     </script>
 </body>
 </html>
